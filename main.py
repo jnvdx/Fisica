@@ -16,13 +16,15 @@ def menu():
     print("\t 1) Incognita del espacio (x)")
     print("\t 2) Incognita del tiempo (x)")
     print("\t 3) Incognita del aceleracion (x)")
+    print("\t 4) Tiro parabolico")
+
 
 
 menu()
 
 eleccion = int(input("Introduce una opcion >>"))
 
-lista = [1, 2, 3,]
+lista = [1, 2, 3, 4]
 
 while eleccion in lista:
 
@@ -49,6 +51,28 @@ while eleccion in lista:
         c = espacio_incial - espacio_final
 
         calculadora_segundo_grado(a,b,c)
+
+
+    elif eleccion == 3:
+
+        espacio_final = float(input("Introduce el espacio final (x) >>"))
+        tiempo = float(input("Introduce el tiempo (s) >>"))
+        espacio_incial = float(input("Introduce el espacio inicia l>>"))
+        velocidad_incial = float(input("Introduce la velocidad inicial >>"))
+
+        aceleracion = (espacio_final - espacio_incial - (velocidad_incial * tiempo)) / (1/2 * (tiempo**2)
+
+        print("Solucion: {}".format(aceleracion))
+
+
+    elif eleccion == 4:
+
+            
+
+
+
+
+
 
 
 
