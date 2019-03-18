@@ -50,7 +50,7 @@ while eleccion in lista:
 
         calculadora_segundo_grado(a,b,c)
 
-    
+
 
 
 
