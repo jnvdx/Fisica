@@ -1,4 +1,7 @@
+
+from sympy import *
 import math
+
 
 
 def calculadora_segundo_grado(a,b,c):
@@ -52,8 +55,6 @@ while eleccion in lista:
 
         calculadora_segundo_grado(a,b,c)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
     elif eleccion == 3:
 
@@ -69,7 +70,6 @@ while eleccion in lista:
 
     elif eleccion == 4:
 
-            
 
 
 
@@ -77,12 +77,9 @@ while eleccion in lista:
 
 
 
-=======
-    
->>>>>>> parent of 9df25e3... He añadido y terminado la tercera opcion (Variable de la aceleracion)
-=======
-    
->>>>>>> parent of 9df25e3... He añadido y terminado la tercera opcion (Variable de la aceleracion)
+
+
+
 
 
 
