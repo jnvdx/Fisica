@@ -1,32 +1,18 @@
 
 import math
 from sympy import *
-"""
-x = Symbol('x')
+def velocidad_descompuesta(v_0, B):
 
-y = solve(x**2 + 4*x -17)
-
-print(y)
-"""
-
-v_0 = float(input("Introducir velocidad inical >>"))
-a = float(input("INtroduce el angulo de tiro >>"))
-
-def velocidad_descompuesta(v_0,a):
+    a = math.radians(B)
 
     v_0x = v_0 * math.cos(a)
     v_0y = v_0 * math.sin(a)
 
-    return v_0x
-    return v_0y
+    print(v_0x)
+    print(v_0y)
 
 
-"""
-Calcular primero el punto mas alto
-"""
+v_0 = float(input("Introducir velocidad inical >>"))
+B = float(input("Introduce el angulo de tiro >>"))
 
-velocidad_descompuesta(v_0,a)
-
-v_0x = velocidad_descompuesta(v_0)
-
-print(v_0x)
+velocidad_descompuesta(v_0,B)
