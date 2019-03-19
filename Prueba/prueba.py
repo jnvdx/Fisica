@@ -1,4 +1,5 @@
 
+
 import math
 from sympy import *
 
@@ -17,7 +18,7 @@ def velocidad_descompuesta(v_0, B,):
 
 
 
-v_0 = float(input("Introducir velocidad inical >>"))
+v_0 = float(input("Introducir velocidad polla >>"))
 B = float(input("Introduce el angulo de tiro >>"))
 
 velocidad_descompuesta(v_0,B)

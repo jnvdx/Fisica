@@ -3,6 +3,7 @@ from sympy import *
 import math
 
 
+
 def calculadora_segundo_grado(a, b, c):
 
     raiz = math.sqrt(b**2 - (4 * a * c))
@@ -68,4 +69,36 @@ while eleccion in lista:
 
     elif eleccion == 4:
 
-        end;
+        def velocidad_descompuesta(v_0, B,):
+
+            a = math.radians(B)
+
+            v_0x = v_0 * math.cos(a)
+            v_0y = v_0 * math.sin(a)
+
+            lista = [v_0x, v_0y]
+
+            return lista
+
+
+
+        v_0 = float(input("Introducir velocidad polla >>"))
+        B = float(input("Introduce el angulo de tiro >>"))
+
+        velocidad_descompuesta(v_0,B)
+
+        v_x = velocidad_descompuesta(v_0, B,)[0]
+        v_y = velocidad_descompuesta(v_0, B,)[1]
+
+
+
+        print(v_x)
+        print(v_y)
+
+
+
+
+
+
+
+end;
