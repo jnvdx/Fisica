@@ -82,8 +82,10 @@ while eleccion in lista:
 
 
 
-        v_0 = float(input("Introducir velocidad polla >>"))
+        v_0 = float(input("Introducir velocidad inicial >>"))
         B = float(input("Introduce el angulo de tiro >>"))
+        y_0 = float(input("Introduce la altura inicial (0) >>"))
+
 
         velocidad_descompuesta(v_0,B)
 
@@ -92,8 +94,46 @@ while eleccion in lista:
 
 
 
-        print(v_x)
-        print(v_y)
+        def altura_max(y_0,v_y):
+
+            t_ymax = v_y / 9.8
+
+            y_max = y_0 + v_y * t_ymax - 4.8 * t_ymax ** 2
+
+
+            return y_max
+
+        def alcance_max(y_0,v_y,v_0):
+
+            v_0f = v_0
+
+            t_xmax = 2 * (v_y / 9.8)
+
+            x_max = v_0f * t_xmax
+
+            lista = [t_xmax, x_max]
+
+            return lista
+
+        alcance_max(y_0,v_y,v_0)
+
+        t_xmax = alcance_max(y_0,v_y,v_0)[0]
+        x_xmax = alcance_max(y_0,v_y,v_0)[1]
+
+
+
+
+
+
+        print("--------------------------------------------------------\n")
+        print("\n El tiempo transcurrido es {} segundos\n".format(t_xmax))
+        print("\n La distancia recorrida es {} metros\n".format(x_xmax))
+        print("\n La altura maxima es {} metros\n".format(altura_max(y_0,v_y)))
+        print("--------------------------------------------------------")
+
+
+
+
 
 
 
